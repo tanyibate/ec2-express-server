@@ -1,5 +1,9 @@
 const express = require("express");
 const app = express(); // create express app
+var cors = require("cors");
+
+//use cors
+app.use(cors());
 
 // add middleware
 app.use(express.static("public"));
